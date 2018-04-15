@@ -1,0 +1,29 @@
+<html lang="en">
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Assignment 1</title>
+    </head>
+    <body>
+            <script>
+/*Write a JavaScript function named createObject which creates object using Object constructor and
+returns object with following properties
+• Name
+• Height
+• Aboutyourself - method .*/           
+             
+                function createObject(Name="bala",Height="180 cm"){
+                    this.Name = Name,
+                    this.Height = Height,
+                    this.AboutYourself = function(){
+                        return "I am "+this.Name+"."+" I am "+this.Height+" height";
+                    }
+                    return this;
+                }
+                var me = createObject();
+                console.log(me.AboutYourself());
+            </script>
+    </body>
+</html>
